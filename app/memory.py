@@ -3,6 +3,7 @@ import os
 
 DATA_FILE = os.path.join("data", "memory.json")
 
+
 def load_memory():
     """Chargeons les données depuis le fichier JSON."""
     if not os.path.exists(DATA_FILE):
@@ -20,7 +21,6 @@ def load_memory():
 
 
 def save_memory(data):
-
     """Sauvegardons les données dans le fichier JSON."""
 
     with open(DATA_FILE, 'w', encoding='utf-8') as file:
@@ -29,7 +29,6 @@ def save_memory(data):
 
 
 def add_order(order):
-
     """Ajoutons une commande à la mémoire existante."""
 
     memory = load_memory()
